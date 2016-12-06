@@ -10,9 +10,9 @@ then
 
 	#number of characters displayed in a single line.
 	#stay below the number of lines to avoid blank space
-	LINE=$(($NUM / $((3))))
-	((LINE *= 2))
-
+#	LINE=$(($NUM / $((3))))
+#	((LINE *= 2))
+	LINE=30
 	if [ -f $OUTPUT ];
 	then
 		rm $OUTPUT
