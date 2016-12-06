@@ -6,6 +6,7 @@ OUTPUT=mass_text
 NUM_LINES=$(cat $FILE | wc -l)
 MAX_LINE_LEN=$(($NUM_LINES / $((2))))
 MAX_LINE_LEN=$(($MAX_LINE_LEN + $(($MAX_LINE_LEN / $((2))))))
+
 rm $OUTPUT
 while [ $NUM_LINES \> 0 ]
 do 
