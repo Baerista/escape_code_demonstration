@@ -10,10 +10,11 @@ then
 
 		echo "]2;~>)$(cat $FILE)(<~\c"
 		TEMP=$(head -c 1 $FILE)
-		
-		#find a way to mute dd or use a different method of moving characters
 
+		#TODO LIST
 		#add a maximum cap, no sense in displaying a banner wider than 80 characters
+		#maybe find a way to display a substring of the total text?
+		#
 		
 		dd if="$FILE" of="$FILE~" bs=1 skip=1 &> /dev/null
 		mv "$FILE~" "$FILE"
